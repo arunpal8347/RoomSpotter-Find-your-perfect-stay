@@ -1,0 +1,203 @@
+.cointainer{
+    margin-left: 3rem;
+    margin-right: 3rem;
+    flex: 1;
+}
+body{
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar{
+    height: 5rem;
+    background-color: white;
+}
+
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+.nav-link{
+    color: #222222 !important;
+}
+
+/* Footer */
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+
+.f-info-socials,
+.f-info-links,
+.f-info-brand{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-info-socials i{
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.f-info{
+    text-align: center;
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+/* Cards */
+.listing-card{
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body{
+    padding: 0 !important;
+}
+
+.card-text p{
+    font-weight: 400 !important;
+}
+
+.listing-link{
+    text-decoration: none ;
+}
+
+/* Card effect */
+.card-img-overlay{
+    opacity: 0;
+}
+
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: rgb(255, 255, 255);
+}
+
+/* New page */
+.add-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* Edit page */
+.edit-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* Show page */
+.show-img{
+    height: 30vh;
+}
+
+.btns{
+    display: flex;
+}
+
+.show-card{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Map */
+#map {
+    width: 80%; /* Make the map fill the width of its parent column */
+    height: 400px; /* Set a fixed height for the map (adjust as needed) */
+    border-radius: 8px; /* Add some styling */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+@media (max-width: 768px) {
+    #map {
+        height: 300px; /* Shorter height on smaller devices for better fit */
+    }
+}
+
+
+/* Category */
+#filters{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.filter{
+    text-align: center;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    opacity: 0.7;
+}
+.filter:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.filter p{
+    font-size: 0.8rem;
+}
+.tax-info{
+    display: none;
+}
+.tax-toggle{
+    border: 1px solid black;
+    border-radius: 1rem;
+    height: 3rem;
+    padding: 0.7rem;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+}
+.filter a{
+    text-decoration: none;
+    color: #000;
+}
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+    #filters {
+        justify-content: center; /* Center items on smaller screens */
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+    .filter {
+        margin-right: 0.5rem;
+        margin-top: 0.5rem;
+    }
+    .tax-toggle {
+        margin-left: 0; /* Remove auto margin on smaller screens */
+        width: 100%; /* Make it full width */
+        justify-content: center; /* Center content within the toggle */
+        margin-top: 1rem; /* Add some space above it */
+    }
+}
+
+@media (max-width: 480px) {
+    .filter {
+        font-size: 0.9rem; /* Slightly smaller icons/text for very small screens */
+    }
+    .filter p {
+        font-size: 0.7rem;
+    }
+    .tax-toggle {
+        padding: 0.5rem;
+        height: auto;
+    }
+}
+
